@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fancy blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css"/>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+        <!-- Main navigation -->
+        <header>
+          <!--Navbar-->
+
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('/static/assets/imgtable.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient align-items-center">
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                     <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#">Web Blog</a>
+       </div>
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="/">Home</a></li>
+         <li><a href="/blogs">Blogs</a></li>
+
+       </ul>
+
+      </div>
+   </nav>
+                  {% block content %}
+                    {% endblock %}
+                    <div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+
+        </header>
+        <!-- Main navigation -->
+
+
+    </body>
+</html>
